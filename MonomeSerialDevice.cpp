@@ -247,7 +247,7 @@ void MonomeSerialDevice::processSerial() {
                 if (i < deviceID.length()) {
                   Serial.write(deviceID[i]);
                 } else {
-                  Serial.write(0x00);
+                  Serial.write((byte)0x00);
                 }
             }
             break;
